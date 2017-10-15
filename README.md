@@ -2,6 +2,8 @@
 # Agile Software Engineering and Systems Engineering at SKA scale
 This repository contains the manuscript for the proceedings of my contribution (O4.4, title above) to ADASS XXVII (2017) in Santiago.
 
+This version will be submitted to the arXiv as pre-print. Please, remember that the ADASS submissions have a copyright transfer to the Astronomical Society of the Pacific (ASP).
+
 ## Author
 J. Santander-Vela (SKA Organisation)
 
