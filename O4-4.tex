@@ -79,15 +79,13 @@ More information of SKA system engineering practices can be found in~\cite{2016S
 
 % section introduction (end)
 
-\section{SE principles} % (fold)
-\label{sec:se_principles}
-Systems Engineering is an interdisciplinary approach and means to enable the full life cycle of successful systems, including problem formulation, solution development and operational sustainment and use. [INCOSE]
+\section{SE vs Agile development principles} % (fold)
+\label{sec:se_vs_agile_development_principles}
+Systems Engineering is an interdisciplinary approach and means to enable the full life cycle of successful systems, including problem formulation, solution development, and operational sustainment and use~\cite{INCOSE-TP-2003-002-04}.
 
 During all of those phases, understanding of the system increases, and changes are inevitable. Managing change, and making sure change happens while keeping a working system, is central to SE.
-% section se_principles (end)
 
-\section{Agile principles} % (fold)
-\label{sec:agile_principles}
+However, in most of the typical SE processes there is the underlying assumption that change will decrease with time, which is typically true for hardware/mechanical systems, but tends not to be true for software heavy systems. 
 
 From the Agile Manifesto,\footnote{\url{http://agilemanifesto.org}}, its main principles are:
 
@@ -108,15 +106,15 @@ It also means that traditional Work-Breakdown-Structure oriented approaches donâ
 	\item To have systems and processes that accommodate software change and still can prove requirements are satisfied; this means not using a document-centric requirements management system, but being able to integrated requirements, development, testing, and results with a quick turnaround.	
 \end{itemize}
 
-And all of this is made on a fixed cadence ---with the fastest period being the \emph{sprint}---, trying to keep momentum, allowing teams to self-organise their prioritised tasks.	
+And all of this is made on a fixed cadence ---with the fastest period being the \emph{sprint}---, trying to keep momentum, allowing teams to self-organise their prioritised tasks.
 
-% section agile_principles (end)
+% section se_vs_agile_development_principles (end)
 
-\section{SE and Agile} % (fold)
+\section{Marrying SE with Agile} % (fold)
 \label{sec:se_and_agile}
-Successfully marrying Agile principles and System Engineering principles means that, instead of making sure the SE processes are correct so that we remove the human factor, and that we can prove that the system, as designed, will behave as intended when built, we focus on delivering a minimum viable system as soon as possible, constructed from minimum viable subsystems, and we keep adding functionality, making sure we keep the intended behaviours that we have already built, and that we incorporate the still not incorporated behaviours as development progresses.	
+Successfully marrying Agile principles and System Engineering principles means that, instead of making sure the SE processes are correct so that we remove the human factor as a source of mistakes, and that we can prove that the system, as designed, will behave as intended when built, we focus on delivering a minimum viable system as soon as possible, constructed from minimum viable subsystems, and we keep adding functionality, making sure we keep the intended behaviours that we have already built, and that we incorporate the still not incorporated behaviours as development progresses.	
 
-That means that we need metrics to keep track of the progress towards design completion during the design phase ---the downward part of the V---, and then to record validation of the design artefacts ---upward part of the V---. But you also want to be able to support those processes even when the design phase does not go through a traditional V, but it is made of multiple, indented Vs. See for instance Figure XXX, that reproduces Fig. 3.9 from the INCOSE Systems Engineering Handbook, 4th edition [INCOSE].	
+That means that we need metrics to keep track of the progress towards design completion during the design phase ---the downward part of the classical V---, and then to record validation of the design artefacts ---upward part of the V---. But you also want to be able to support those processes even when the design phase does not go through a traditional V, but it is made of multiple, indented Vs. See for instance Figure XXX, that reproduces Fig. 3.9~\cite{INCOSE-TP-2003-002-04}.	
 ï¿¼	
 If the killer function of Agile development is Continuous Integration, and be always available to deliver working software, the killer function for Agile Systems Engineering is Continuous Inspection, and be always able to deliver status of compliance, and of progress, almost at any moment, and on cadence.	
 
@@ -152,7 +150,7 @@ We hope to be able to have more metrics, from the inspection of the backlogs, an
 \label{sec:conclusions}
 Traditional, by the book, Systems Engineering is never a good idea. It is even less ideal for projects that are optimising a multi-valued function in the cost, science capability, and time-to-construction, among other dimensions. Processes need to be tailored, and they need to be kept responsive, while at the same time keeping track of the System Engineering deliverables that are required as design artefacts, and managing the risk of the uncertainties that are still carried forward to the construction phase. When software is involved, design needs to focus on documenting the system architecture, instead of designing down to the application or module level, as agile methods will require continuous adaptation of the modules to be developed. It also requires definition and constant evaluation of the key performance metrics that will be used during the construction phase, and be able to translate between SE artefacts such as ICDs, the software architecture, functional analysis, and the needs for the different releases.	
 
-We have been applying evidence-based System Engineering artefacts by different means, and found the shortcomings of the approach, specially when dealing with a world-wide distributed team with no traditional line of command.	
+We have been applying evidence-based System Engineering artefacts by different means, and found the shortcomings of the approach, specially when dealing with a world-wide distributed team with no traditional line of command.
 
 % section conclusions (end)
 
