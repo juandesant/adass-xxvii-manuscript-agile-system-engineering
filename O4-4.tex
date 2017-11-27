@@ -71,17 +71,17 @@ The SKA is the ultimate software-enabled telescope, given the enormous amounts o
 The Square Kilometre Array (SKA) is an international project with the aim of building multi-purpose radio telescopes, with an equivalent collecting area of at least one square kilometre. It will provide unprecedented sensitivity and survey speed, so that key questions in modern astrophysics and cosmology can be answered. Currently, Phase 1 of the SKA (SKA1) is under design, nearing Critical Design Review (CDR) status.	
 	
 To give an idea of the problem, data rates between the sensor network elements, and the processing elements of the SKA1 telescopes is shown in the figure below. The amount of processing required by the Central Signal Processor (CSP) is ~50\% of the current most powerful supercomputer in the world\footnote{98 PFLOPS as of June 2017, see \url{https://top500.org}}, even if they are simple Multiply-Accumulate operations, and the Science Data Processor (SDP) will require in the order of 2.5 times the capability of the current most powerful computer in the world.
-￼	
+
 Eleven international consortia, whose members span 17 timezones,\footnote{from Vancouver (GMT-9) to Sydney (GMT+12)} are designing each of the subsystems.
 However, the SKA Organisation (SKAO) is the design authority, with Integrated Engineering Teams (IETs) per Element with Systems Engineering, Project Management, Operations, and Science considerations always represented. The External IETs include the counterparts from consortia, and we have Telescope Teams which can spawn Resolution Teams when issues need to be discussed and resolved across the whole project.
 SKAO retains ownership of the L1 requirements, System Architecture, System Baseline Design, and Functional Analysis, and after CDR we will have ownership of all system and subsystem requirements, and the SE and design artefacts from consortia.
-More information of SKA system engineering practices can be found in~\cite{2016SPIE.9911E..0WC}.
+More information of SKA system engineering practices can be found in~\citep{2016SPIE.9911E..0WC}.
 
 % section introduction (end)
 
 \section{SE vs Agile development principles} % (fold)
 \label{sec:se_vs_agile_development_principles}
-Systems Engineering is an interdisciplinary approach and means to enable the full life cycle of successful systems, including problem formulation, solution development, and operational sustainment and use~\cite{INCOSE-TP-2003-002-04}.
+Systems Engineering is an interdisciplinary approach and means to enable the full life cycle of successful systems, including problem formulation, solution development, and operational sustainment and use~\citep{INCOSE-TP-2003-002-04}.
 
 During all of those phases, understanding of the system increases, and changes are inevitable. Managing change, and making sure change happens while keeping a working system, is central to SE.
 
@@ -98,7 +98,7 @@ From the Agile Manifesto,\footnote{\url{http://agilemanifesto.org}}, its main pr
 
 Following those principles, the traditional Software Engineering Management Plan becomes more a framework for the best practices that need to be followed ---pull requests between branches/forks versus commits to master, code reviews, Test Driven Design---, and not a final blueprint on how the software will be managed.
 
-It also means that traditional Work-Breakdown-Structure oriented approaches don’t fully work, and that instead, what is finally built is a result of agreements with stakeholders, as we will:
+It also means that traditional Work-Breakdown-Structure oriented approaches don't fully work, and that instead, what is finally built is a result of agreements with stakeholders, as we will:
 \begin{itemize}
 	\item Keep communication with all stakeholders involved in the project, with the conversation being 	
 	\item To have continuous integration of the software systems	
@@ -114,8 +114,8 @@ And all of this is made on a fixed cadence ---with the fastest period being the 
 \label{sec:se_and_agile}
 Successfully marrying Agile principles and System Engineering principles means that, instead of making sure the SE processes are correct so that we remove the human factor as a source of mistakes, and that we can prove that the system, as designed, will behave as intended when built, we focus on delivering a minimum viable system as soon as possible, constructed from minimum viable subsystems, and we keep adding functionality, making sure we keep the intended behaviours that we have already built, and that we incorporate the still not incorporated behaviours as development progresses.	
 
-That means that we need metrics to keep track of the progress towards design completion during the design phase ---the downward part of the classical V---, and then to record validation of the design artefacts ---upward part of the V---. But you also want to be able to support those processes even when the design phase does not go through a traditional V, but it is made of multiple, indented Vs. See for instance Figure XXX, that reproduces Fig. 3.9~\cite{INCOSE-TP-2003-002-04}.	
-￼	
+That means that we need metrics to keep track of the progress towards design completion during the design phase ---the downward part of the classical V---, and then to record validation of the design artefacts ---upward part of the V---. But you also want to be able to support those processes even when the design phase does not go through a traditional V, but it is made of multiple, indented Vs. See for instance Figure XXX, that reproduces Fig. 3.9~\citep{INCOSE-TP-2003-002-04}.
+
 If the killer function of Agile development is Continuous Integration, and be always available to deliver working software, the killer function for Agile Systems Engineering is Continuous Inspection, and be always able to deliver status of compliance, and of progress, almost at any moment, and on cadence.	
 
 % section se_and_agile (end)
@@ -124,23 +124,18 @@ If the killer function of Agile development is Continuous Integration, and be al
 \label{sec:se_functions_during_ska_pre_construction}
 During pre-construction, the main SE function from SKAO is the supervision of Interface Control Documents (ICDs), but also assessing design compliance against L2 requirements, through compliance matrices, and evidence for compliance. Many statements can be easily justified through functional allocations, while others require architectural support in order for them to be met.
 
-Given the different levels of design maturity at system and elevent level, and of adherence to SE principles across consortia, and the relatively small amounts of SE personell at SKAO, tradicional processes with full flown-down from Design Reference Mission, to Operational Concept, to Functional Analysis, to System Requierements have not been fully possible. Rather, iterations over the available detail of those SE artefacts have been steadily increasing definition, with the drawing of Element and System PDR baselines.
+Given the different levels of design maturity at system and elevent level, and of adherence to SE principles across consortia, and the relatively small amounts of SE personell at SKAO, tradicional processes with full flown-down from Design Reference Mission, to Operational Concept, to Functional Analysis, to System Requierements have not been fully possible. Rather, iterations over the available detail of those SE artefacts have been steadily increasing definition, with the drawing of Element and System PDR baselines, and future Element and System CDR baselines.
 
-In all these processes, we have required submissions of some design and SE artifacts linked with individual milestones. SKAO has a unified system for Configuration Management, eBentley (eB)\footnote{\url{eBentley}}, that is also used by all consortia. However, in spite of SKAO offers to Consortia for usage of our own Requirements Management system (JAMA Contour\footnote{\url{https://jama.contour.com/}}), it has not been standardised, and requirement submissions require manual processes from the SKAO SEs. There is still a large amount of human understanding required, and the process enables a less mechanistic, more engineering-centric review of requirements, but also more prone to pitfalls.
+In all these processes, we have required submissions of some design and SE artifacts linked with individual milestones. SKAO has a unified system for Configuration Management, eBentley (eB)\footnote{\url{eBentley}}, that is also used by all consortia. However, in spite of SKAO offers to Consortia for usage of our own Requirements Management system (JAMA \footnote{\url{http://jamasoftware.com/}}), it has not been standardised, and requirement submissions require manual processes from the SKAO SEs. There is still a large amount of human understanding required, and the process enables a less mechanistic, more engineering-centric review of requirements, but also more prone to pitfalls.
 
 % section se_functions_during_ska_pre_construction (end)
 
 \section{SE functions during SKA1 construction} % (fold)
 \label{sec:se_functions_during_ska1_construction}
-The Scaled Agile Framework\footnote{\url{https://scaledagileframework.com}} (SAFe) has been selected as the way software development will be performed during SKA1 construction. SAFe allows for recursive groupings of Agile teams (using Scrum) into Agile Release Trains ---that also use Scrum for managing the Train backlog, that then gets assigned to the teams’ backlog(s)---, and can group multiple Agile Release Trains into a Large Solution. See Figure XXX.	
-￼	
+The Scaled Agile Framework\footnote{\url{http://scaledagileframework.com}} (SAFe) has been selected as the way software development will be performed during SKA1 construction. SAFe allows for recursive groupings of Agile teams (using Scrum) into Agile Release Trains ---that also use Scrum for managing the Train backlog, that then gets assigned to the teams' backlog(s)---, and can group multiple Agile Release Trains into a Large Solution. See Figure XXX.
 As previously indicated, the System Engineering function will be organised from the SKA Inter-Governmental Organisation (IGO) that will exist before triggering construction. However, it needs to trickle down to the Agile Release Trains, and to the individual agile teams.	
-Part of it has to go through the figure of the product owners, and consumer representatives, but there must be a strong presence of the system’s mission and behaviour, and the Operations Concept Document, so that it is really implemented.	
-	
-	
-Metric: between 1/3 and 2/5 of my time are devoted to communication; if we include internal meetings, it is probably above that	
-Role of Architects, Product Owners	
-Communications	
+Part of it has to go through the figure of the product owners, and consumer representatives, but there must be a strong presence of the system's mission and behaviour, and the Operations Concept Document, so that it is really implemented.	
+
 We hope to be able to have more metrics, from the inspection of the backlogs, and the processing of the outcomes of the Program increment demos.	
 
 % section se_functions_during_ska1_construction (end)
@@ -148,15 +143,16 @@ We hope to be able to have more metrics, from the inspection of the backlogs, an
 
 \section{Conclusions} % (fold)
 \label{sec:conclusions}
-Traditional, by the book, Systems Engineering is never a good idea. It is even less ideal for projects that are optimising a multi-valued function in the cost, science capability, and time-to-construction, among other dimensions. Processes need to be tailored, and they need to be kept responsive, while at the same time keeping track of the System Engineering deliverables that are required as design artefacts, and managing the risk of the uncertainties that are still carried forward to the construction phase. When software is involved, design needs to focus on documenting the system architecture, instead of designing down to the application or module level, as agile methods will require continuous adaptation of the modules to be developed. It also requires definition and constant evaluation of the key performance metrics that will be used during the construction phase, and be able to translate between SE artefacts such as ICDs, the software architecture, functional analysis, and the needs for the different releases.	
-
+Traditional, \emph{by the book}, Systems Engineering is never a good idea. It is even less ideal for projects that are optimising a multi-valued function in the cost, science capability, and time-to-construction, among other dimensions. Processes need to be tailored, and they need to be kept responsive, while at the same time keeping track of the System Engineering deliverables that are required as design artefacts, and managing the risk of the uncertainties that are still carried forward to the construction phase.
+When software is involved, design needs to focus on documenting the system architecture, instead of designing down to the application or module level, as agile methods will require continuous adaptation of the modules to be developed. 
+It also requires definition and constant evaluation of the key performance metrics that will be used during the construction phase, and be able to translate between SE artefacts such as ICDs, the software architecture, functional analysis, and the needs for the different releases.	
 We have been applying evidence-based System Engineering artefacts by different means, and found the shortcomings of the approach, specially when dealing with a world-wide distributed team with no traditional line of command.
 
 % section conclusions (end)
 
-\acknowledgements The authors want to thank all of the System Engineers in SKAO for valuable contributions to this paper, and to the SKA1 Pre-Construction Engineering effort. We also want to thank our SE colleagues at the different consortia for all the good conversations and progress.
+% \acknowledgements The authors want to thank all of the SEs in SKAO for valuable contributions to this paper, and to the SKA1 Pre-Construction Engineering effort. We also want to thank our SE colleagues at the different consortia for all the good conversations and progress.
 
 
-\bibliography{04-4}  % For BibTex
+\bibliography{O4-4}  % For BibTex
 
 \end{document}
