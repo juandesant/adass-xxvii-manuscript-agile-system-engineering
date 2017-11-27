@@ -85,15 +85,15 @@ Systems Engineering is an interdisciplinary approach and means to enable the ful
 
 During all of those phases, understanding of the system increases, and changes are inevitable. Managing change, and making sure change happens while keeping a working system, is central to SE.
 
-However, in most of the typical SE processes there is the underlying assumption that change will decrease with time, which is typically true for hardware/mechanical systems, but tends not to be true for software heavy systems. 
+However, in most of the typical SE processes there is the underlying assumption that \emph{change will decrease with time}, which is typically true for hardware/mechanical systems, but tends not to be true for software heavy systems. 
 
 From the Agile Manifesto,\footnote{\url{http://agilemanifesto.org}}, its main principles are:
 
 \begin{itemize}
-	\item Individuals and interactions over processes and tools
-	\item Working software over comprehensive documentation
-	\item Customer collaboration over contract negotiation
-	\item Responding to change over following a plan	
+	\item \textbf{Individuals and interactions} over processes and tools
+	\item \textbf{Working software} over comprehensive documentation
+	\item \textbf{Customer collaboration} over contract negotiation
+	\item \textbf{Responding to change} over following a plan	
 \end{itemize}
 
 Following those principles, the traditional Software Engineering Management Plan becomes more a framework for the best practices that need to be followed ---pull requests between branches/forks versus commits to master, code reviews, Test Driven Design---, and not a final blueprint on how the software will be managed.
@@ -112,11 +112,11 @@ And all of this is made on a fixed cadence ---with the fastest period being the 
 
 \section{Marrying SE with Agile} % (fold)
 \label{sec:se_and_agile}
-Successfully marrying Agile principles and System Engineering principles means that, instead of making sure the SE processes are correct so that we remove the human factor as a source of mistakes, and that we can prove that the system, as designed, will behave as intended when built, we focus on delivering a minimum viable system as soon as possible, constructed from minimum viable subsystems, and we keep adding functionality, making sure we keep the intended behaviours that we have already built, and that we incorporate the still not incorporated behaviours as development progresses.	
+Successfully marrying Agile principles and System Engineering principles means that, instead of making sure the SE processes are correct so that we remove the human factor as a source of mistakes, and that we can prove that the system, as designed, will behave as intended when built, \emph{we focus on delivering a minimum viable system as soon as possible, constructed from minimum viable subsystems, and we keep adding functionality}, making sure we keep the intended behaviours that we have already built, and that we incorporate the still not incorporated behaviours as development progresses.	
 
 That means that we need metrics to keep track of the progress towards design completion during the design phase ---the downward part of the classical V---, and then to record validation of the design artefacts ---upward part of the V---. But you also want to be able to support those processes even when the design phase does not go through a traditional V, but it is made of multiple, indented Vs. See for instance Figure XXX, that reproduces Fig. 3.9~\citep{INCOSE-TP-2003-002-04}.
 
-If the killer function of Agile development is Continuous Integration, and be always available to deliver working software, the killer function for Agile Systems Engineering is Continuous Inspection, and be always able to deliver status of compliance, and of progress, almost at any moment, and on cadence.	
+If the killer function of Agile development is Continuous Integration, and be always available to deliver working software, \emph{the killer function for Agile Systems Engineering is Continuous Inspection}, and be always able to deliver status of compliance, and of progress, almost at any moment, and on cadence.	
 
 % section se_and_agile (end)
 
